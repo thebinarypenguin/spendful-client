@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "name": "spendful",
-  "alias": "spendful", 
-  "routes": 
+  "name": "spendful-client",
+  "alias": "spendful-client",
+  "routes":
     [
       {
         "src": "^/static/(.*)",

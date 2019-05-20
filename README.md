@@ -2,13 +2,13 @@
 
 Michael Bonner, Ethan Zimmerman, Andre Willie, Zoljargal Fallows, and Chris Carnivale
 
-[LiveApp](http://spendful.now.sh)
+[LiveApp](http://spendful-client.now.sh)
 
-[Server Repo](https://github.com/thinkful-ei-armadillo/spendful-server)
+[Server Repo](https://github.com/thebinarypenguin/spendful-server)
 
 ## Summary
 
-Reach your financial goals by tracking every dollar you spend and earn.  This app allows you to 
+Reach your financial goals by tracking every dollar you spend and earn.  This app allows you to
 add all of your incomes and expenses and visualize them through convenient charts and graphs.  The
 front-end utilizes React to create a responsive design.  The back-end leverages the RRule library to allow
 for recurring expenses.
@@ -65,9 +65,9 @@ The Usual Suspects:
 
 Deployed via Now
 
-Special thanks to moment for doing all the complex date math and 
+Special thanks to moment for doing all the complex date math and
 
-preserving our sanity (mostly) 
+preserving our sanity (mostly)
 
 ## Setup
 

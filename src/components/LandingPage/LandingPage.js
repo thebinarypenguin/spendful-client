@@ -13,7 +13,7 @@ export default class LandingPage extends Component {
   constructor(props) {
     super(props)
     this.featuresRef = React.createRef()
-    this.registrationRef = React.createRef() 
+    this.registrationRef = React.createRef()
     this.state = {
       isloading: true,
       team: [
@@ -23,7 +23,7 @@ export default class LandingPage extends Component {
         {name: 'Michael Bonner', href: 'https://github.com/mdb1710'},
         {name: 'Zoljargal Fallows', href: 'https://github.com/ZolFallows'},
       ],
-    }  
+    }
   }
 
   componentDidMount(){
@@ -31,18 +31,18 @@ export default class LandingPage extends Component {
     // this.scrollToRegistration()
     window.scrollTo(0, 0)
   }
-     // Scroll to ref function 
+     // Scroll to ref function
   scrollTo = (el) => {
-    let top = el === 'feature' 
-      ? this.featuresRef.current.offsetTop 
+    let top = el === 'feature'
+      ? this.featuresRef.current.offsetTop
       : this.registrationRef.current.offsetTop
     window.scrollTo({
-        top, 
-        behavior: "smooth" 
+        top,
+        behavior: "smooth"
     })
   }
 
-  
+
   scrollToFeatures = () => {
       this.scrollTo('feature')
   }
@@ -56,11 +56,11 @@ export default class LandingPage extends Component {
     const content = (
       <>
         {this.context.error.length > 0 ? <div className="alert-error-lg">{this.context.error[0]}</div> : ''}
-      
+
         <header ref={this.registrationRef}>
           <div className="landing-header">
             <div className="landing-header-left">
-              <h2>Spendful is the newest way to prevent yourself from going broke.</h2>          
+              <h2>Spendful is the newest way to prevent yourself from going broke.</h2>
             </div>
 
             <div className="landing-header-right">
@@ -107,8 +107,8 @@ export default class LandingPage extends Component {
               <h3>Project</h3>
               {/* <hr className="underline"/> */}
               <ul>
-                <li><a href="https://github.com/thinkful-ei-armadillo/spendful-client" target="_blank" rel="noopener noreferrer">Github Client</a></li>
-                <li><a href="https://github.com/thinkful-ei-armadillo/spendful-server" target="_blank" rel="noopener noreferrer">Github Server</a></li>
+                <li><a href="https://github.com/thebinarypenguin/spendful-client" target="_blank" rel="noopener noreferrer">Github Client</a></li>
+                <li><a href="https://github.com/thebinarypenguin/spendful-server" target="_blank" rel="noopener noreferrer">Github Server</a></li>
                 <li><Link to="/" onClick={this.scrollToRegistration}>Register</Link></li>
                 <li><Link to="/login">Login</Link></li>
               </ul>
