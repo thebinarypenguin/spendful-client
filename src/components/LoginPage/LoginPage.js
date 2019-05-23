@@ -47,6 +47,11 @@ class LoginPage extends React.Component {
 
         {this.state.errors ? <div className="alert-error">{this.state.errors}</div> : ''}
 
+        <ul className="demo-credentials link-sm">
+          <li>Demo email: <strong>demo@spendful.com</strong></li>
+          <li>Demo password: <strong>password</strong></li>
+        </ul>
+
         <LoginForm onSuccess={this.handleLoginSuccess} onFailure={this.handleLoginFailure} />
 
         <Link className="link-sm" to="/">Don't have an account?</Link>
