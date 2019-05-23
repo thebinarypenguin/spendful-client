@@ -1,3 +1,10 @@
+.demo-credentials {
+  padding: 0;
+  list-style-type: none;
+  color:#808080;
+  font-size: 0.9em;
+}
+
 .login-form {
   margin: 4em auto 0;
   max-width: 20em;
